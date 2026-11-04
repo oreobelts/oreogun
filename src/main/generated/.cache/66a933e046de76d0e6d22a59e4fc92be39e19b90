@@ -1,0 +1,8 @@
+// 26.1.2	-999999999-01-01T00:00:00	Oreo/Block Loot Tables
+c10febbdf44cd390a761eb0b4941ebfdaa3234a9 data/oreogun/loot_table/blocks/converter_block.json
+2fdd5259f28e7a53d9a4c578bc680d71a65be318 data/oreogun/loot_table/blocks/sapphire_block.json
+1d172f83fe3c10ad96f6b3aea38b86a211b67217 data/oreogun/loot_table/blocks/sapphire_brick.json
+ecb3a516be69e589bda19914c07af195b6876779 data/oreogun/loot_table/blocks/sapphire_end_ore.json
+19f328e9b60bbd01ac8c4bbfbeea855eef270b78 data/oreogun/loot_table/blocks/sapphire_nether_ore.json
+3eada9ffbe1fc913d65dd92ee35c9af89f6c0fc5 data/oreogun/loot_table/blocks/sapphire_ore.json
+031434feafc3fd113a039de22182023efc452160 data/oreogun/loot_table/blocks/uranium_ore.json

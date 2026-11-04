@@ -1,0 +1,37 @@
+{
+  "item.oreogun.lapiz_ingot": "Lapiz Ingot",
+  "item.oreogun.sapphire": "Sapphire",
+  "item.oreogun.raw_sapphire": "Raw Sapphire",
+  "item.oreogun.chisel": "Chisel",
+  "item.oreogun.bacon": "Bacon",
+  "item.oreogun.depleted_uranium_rods": "Depleted Uranium Rods",
+  "item.oreogun.rawsapphire": "Raw Sapphire",
+  "item.oreogun.sapphire_sword":  "Sapphire Sword",
+  "item.oreogun.sapphire_axe":  "Sapphire Axe",
+  "item.oreogun.sapphire_shovel":  "Sapphire Shovel",
+  "item.oreogun.sapphire_pickaxe":  "Sapphire Pickaxe",
+  "item.oreogun.sapphire_helmet": "Sapphire Helmet",
+  "item.oreogun.sapphire_boots": "Sapphire Boots",
+  "item.oreogun.sapphire_chestplate": "Sapphire Chestplate",
+  "item.oreogun.sapphire_leggings": "Sapphire Leggings",
+  "item.oreogun.sapphire_horse_armor":"Sapphire Horse Armor",
+  "item.oreogun.true_knife": "Knife",
+
+
+
+
+  "block.oreogun.sapphire_block": "Sappihire Block",
+  "block.oreogun.sapphire_ore": "Sappihire Ore",
+  "block.oreogun.uranium_ore": "Uranium Ore",
+  "block.oreogun.sapphire_nether_ore": "Sappihire Nether Ore",
+  "block.oreogun.sapphire_end_ore": "Sappihire End Ore",
+  "block.oreogun.sapphire_brick": "Sappihire Bricks",
+  "block.oreogun.converter_block": "Converter Block",
+  "block.oreogun.sapphire_lamp": "Sapphire Lamp",
+
+
+
+  "tooltip.main.chisel": "Chisels block into other blocks",
+  "tooltip.main.bacon": "It is food",
+  "creativemodetab.Main.oreo.mod": "Oreo Mod Items"
+}

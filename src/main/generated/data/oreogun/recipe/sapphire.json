@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "oreogun:sapphire_brick"
+  ],
+  "result": {
+    "count": 9,
+    "id": "oreogun:sapphire"
+  }
+}

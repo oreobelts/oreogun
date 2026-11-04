@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 20,
+  "experience": 500.0,
+  "group": "sapphire",
+  "ingredient": "oreogun:sapphire",
+  "result": {
+    "id": "oreogun:sapphire"
+  }
+}

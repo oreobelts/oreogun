@@ -1,0 +1,6 @@
+// 26.1.2	-999999999-01-01T00:00:00	Oreo/Tags for minecraft:item
+983a8dcf9d20e4266ce9a94775cc4eb616950efc data/minecraft/tags/item/axes.json
+257aa1734f61fed8ac83820066206299ee23c13b data/minecraft/tags/item/pickaxes.json
+2b88a25838cc8514e467872cb6a77f4fd3430286 data/minecraft/tags/item/shovels.json
+6ed41cdf4b050e18a780ee8cb5b41d60506ef068 data/minecraft/tags/item/swords.json
+302bd7303af66eba3b45aa16d3554dbe9f34a141 data/oreogun/tags/item/transfromable_items.json

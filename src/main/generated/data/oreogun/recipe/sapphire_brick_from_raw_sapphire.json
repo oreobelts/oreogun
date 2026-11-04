@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sapphire",
+  "key": {
+    "R": "oreogun:raw_sapphire"
+  },
+  "pattern": [
+    "RRR",
+    "RRR",
+    "RRR"
+  ],
+  "result": {
+    "id": "oreogun:sapphire_brick"
+  }
+}

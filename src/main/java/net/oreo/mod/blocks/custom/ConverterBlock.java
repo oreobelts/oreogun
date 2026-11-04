@@ -1,0 +1,54 @@
+package net.oreo.mod.blocks.custom;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
+import net.oreo.mod.modItems.ModItems;
+import net.oreo.mod.tag.ModTags;
+
+public class ConverterBlock extends Block {
+
+    public ConverterBlock(Properties properties) {
+        super(properties);
+    }
+
+    @Override
+    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
+        level.addParticle(ParticleTypes.SMOKE,  pos.getX() + 0.5, pos.getY() + 1, pos.getZ() + 0.5, 0, 1, 0);
+        level.playSound(player, pos, SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.BLOCKS, 2f, 1f);
+        return InteractionResult.SUCCESS;
+    }
+
+
+    @Override
+    public void stepOn(Level level, BlockPos pos, BlockState onState, Entity entity) {
+        // add effect to player
+        if(entity instanceof Player player) {
+            player.addEffect(new MobEffectInstance(MobEffects.GLOWING, 300));
+        }
+        // change Item
+        if(entity instanceof ItemEntity itemEntity){
+            if(isValidItem(itemEntity.getItem())) {
+                itemEntity.setItem(new ItemStack(ModItems.SAPPHIRE, itemEntity.getItem().getCount()));
+            }
+        }
+        super.stepOn(level, pos, onState, entity);
+    }
+
+    private boolean isValidItem(ItemStack item){
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
+    }
+}

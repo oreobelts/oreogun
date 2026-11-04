@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "sapphire",
+  "key": {
+    "C": "oreogun:sapphire",
+    "V": "minecraft:stick"
+  },
+  "pattern": [
+    " CC",
+    " VC",
+    " V "
+  ],
+  "result": {
+    "id": "oreogun:sapphire_axe"
+  }
+}

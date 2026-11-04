@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 10,
+  "experience": 1000.0,
+  "group": "sapphire",
+  "ingredient": "oreogun:sapphire_ore",
+  "result": {
+    "id": "oreogun:sapphire"
+  }
+}

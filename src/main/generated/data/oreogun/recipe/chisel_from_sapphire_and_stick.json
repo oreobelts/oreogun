@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "sapphire",
+  "ingredients": [
+    "oreogun:sapphire",
+    "minecraft:stick"
+  ],
+  "result": {
+    "id": "oreogun:chisel"
+  }
+}

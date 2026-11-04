@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "sapphire",
+  "key": {
+    "C": "minecraft:diamond",
+    "V": "minecraft:stick"
+  },
+  "pattern": [
+    "CCC",
+    " V ",
+    " V "
+  ],
+  "result": {
+    "id": "oreogun:sapphire_pickaxe"
+  }
+}

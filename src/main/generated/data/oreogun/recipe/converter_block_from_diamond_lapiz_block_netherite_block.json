@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sapphire",
+  "key": {
+    "C": "minecraft:diamond",
+    "R": "minecraft:netherite_block",
+    "V": "minecraft:lapis_block"
+  },
+  "pattern": [
+    "CVC",
+    "VRV",
+    "CVC"
+  ],
+  "result": {
+    "id": "oreogun:converter_block"
+  }
+}
