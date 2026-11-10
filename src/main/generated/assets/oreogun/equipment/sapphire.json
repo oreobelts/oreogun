@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "oreogun:sapphire"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "oreogun:sapphire"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "oreogun:sapphire"
+      }
+    ]
+  }
+}

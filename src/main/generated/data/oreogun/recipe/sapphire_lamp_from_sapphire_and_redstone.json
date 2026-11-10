@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "sapphire",
+  "key": {
+    "C": "oreogun:sapphire",
+    "V": "minecraft:redstone"
+  },
+  "pattern": [
+    "CCC",
+    "CVC",
+    "CCC"
+  ],
+  "result": {
+    "id": "oreogun:sapphire_lamp"
+  }
+}
