@@ -1,5 +1,10 @@
 // 26.1.2	-999999999-01-01T00:00:00	Oreo/Tags for minecraft:item
 983a8dcf9d20e4266ce9a94775cc4eb616950efc data/minecraft/tags/item/axes.json
+33f2ec2610dafa15ff0c934668b1538c55761e04 data/minecraft/tags/item/chest_armor.json
+201cb63c289c2eda0dc9f8e11fd83390f18a3427 data/minecraft/tags/item/enchantable/bow.json
+42cb0754db89531478bac6d5d9580e8344a367bd data/minecraft/tags/item/foot_armor.json
+c0fdba7dce85387b13ed9c6711b27575948d463b data/minecraft/tags/item/head_armor.json
+3cc81f0162faeee0559c8cbc910aa5da9556a9f5 data/minecraft/tags/item/leg_armor.json
 257aa1734f61fed8ac83820066206299ee23c13b data/minecraft/tags/item/pickaxes.json
 2b88a25838cc8514e467872cb6a77f4fd3430286 data/minecraft/tags/item/shovels.json
 6ed41cdf4b050e18a780ee8cb5b41d60506ef068 data/minecraft/tags/item/swords.json

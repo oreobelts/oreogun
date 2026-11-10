@@ -2,8 +2,10 @@ package net.oreo.mod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
+import net.minecraft.advancements.criterion.EntityHurtPlayerTrigger;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.Items;
 import net.oreo.mod.modItems.ModItems;
 import net.oreo.mod.tag.ModTags;
@@ -34,5 +36,7 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
         valueLookupBuilder(ItemTags.CHEST_ARMOR).add(ModItems.SAPPHIRE_CHESTPLATE);
         valueLookupBuilder(ItemTags.LEG_ARMOR).add(ModItems.SAPPHIRE_LEGGINGS);
         valueLookupBuilder(ItemTags.FOOT_ARMOR).add(ModItems.SAPPHIRE_BOOTS);
+
+        valueLookupBuilder(ItemTags.BOW_ENCHANTABLE).add(ModItems.GUN);
     }
 }

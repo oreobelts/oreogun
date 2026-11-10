@@ -49,5 +49,8 @@ public class ModModelProvider extends FabricModelProvider
         itemModelGenerators.generateTrimmableItem(ModItems.SAPPHIRE_LEGGINGS, ModArmorMaterials.SAPPHIRE_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
         itemModelGenerators.generateTrimmableItem(ModItems.SAPPHIRE_HELMET, ModArmorMaterials.SAPPHIRE_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
         itemModelGenerators.generateFlatItem(ModItems.SAPPHIRE_HORSE_ARMOR, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.createFlatItemModel(ModItems.GUN,  ModelTemplates.CROSSBOW);
+        itemModelGenerators.generateCrossbow(ModItems.GUN);
     }
 }

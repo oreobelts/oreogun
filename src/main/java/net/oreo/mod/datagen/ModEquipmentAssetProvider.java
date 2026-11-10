@@ -14,10 +14,12 @@ import net.oreo.mod.Main;
 import net.oreo.mod.modItems.ModArmorMaterials;
 import net.oreo.mod.modItems.ModToolsMaterials;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.BiConsumer;
 
-public class ModEquipmentAssetProvider implements DataProvider {
+public class    ModEquipmentAssetProvider implements DataProvider {
     private final PackOutput.PathProvider pathProvider;
 
     public ModEquipmentAssetProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> competableFuture ) {
@@ -28,14 +30,18 @@ public class ModEquipmentAssetProvider implements DataProvider {
         consumer.accept(ModArmorMaterials.SAPPHIRE_KEY,
                 EquipmentClientInfo.builder()
                         .addHumanoidLayers(Identifier.fromNamespaceAndPath(Main.MOD_ID, "sapphire"))
-                        .addLayers(EquipmentClientInfo.LayerType.HORSE_BODY,
-                                new EquipmentClientInfo.Layer(Identifier.fromNamespaceAndPath(Main.MOD_ID, "sapphire")))
                         .build());
     }
 
     @Override
     public CompletableFuture<?> run(CachedOutput cache) {
-        return null;
+        Map<ResourceKey<EquipmentAsset>, EquipmentClientInfo> equipmentAssets = new HashMap<>();
+        bootstrap((id, asset) -> {
+            if (equipmentAssets.putIfAbsent(id, asset) != null) {
+                throw new IllegalStateException("Tried to register equipment asset twice for id: " + id);
+            }
+        });
+        return DataProvider.saveAll(cache, EquipmentClientInfo.CODEC, this.pathProvider::json, equipmentAssets);
     }
 
     @Override

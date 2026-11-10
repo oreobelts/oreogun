@@ -58,7 +58,8 @@ public class ModItems {
     public static final Item SAPPHIRE_HORSE_ARMOR = registerItem("sapphire_horse_armor",
             properties -> new Item(properties.horseArmor(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIALS)));
 
-
+    public static final Item GUN = registerItem("gun",
+                properties -> new CrossbowItem(properties.durability(5000000)));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Main.MOD_ID, name),
