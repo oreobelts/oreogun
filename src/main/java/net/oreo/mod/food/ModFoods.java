@@ -11,5 +11,5 @@ public class ModFoods {
     public static final FoodProperties BACON = new FoodProperties.Builder().nutrition(100).saturationModifier(100).build();
 
     public static final Consumable BACON_CONSUMABLE = Consumables.defaultFood()
-            .consumeSeconds(1f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.STRENGTH), 15f)).build();
+            .consumeSeconds(0.5f).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.STRENGTH, 100000000, 10000000), 15f)).build();
 }

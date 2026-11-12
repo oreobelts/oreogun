@@ -94,6 +94,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
                         .group("sapphire")
                         .save(output, "sapphire_axe_from_diamond_and_stick");
+                shaped(RecipeCategory.COMBAT, ModItems.GUN)
+                        .pattern(" S ")
+                        .pattern("AAA")
+                        .pattern("A  ")
+                        .define('S', Items.GLASS)
+                        .define('A', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE))
+                        .group("sapphire")
+                        .save(output, "sniper_rifle_from_sapphire_and_glass");
 
                 // Custom Shapeless Recipe
                 shapeless(RecipeCategory.MISC, ModItems.CHISEL, 1)

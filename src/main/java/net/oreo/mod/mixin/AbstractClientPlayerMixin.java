@@ -18,7 +18,5 @@ public abstract class AbstractClientPlayerMixin extends Player {
     @Inject(method = "getFieldOfViewModifier", at = @At(value = "TAIL"), cancellable = true)
     private void getFieldOfViewModifierMixin(boolean firstPerson, float effectScale, CallbackInfoReturnable<Float> infoReturnable) {
         float modifier = 1f;
-
-        //if(this.isUsingItem() &&)
     }
 }

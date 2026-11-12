@@ -13,6 +13,7 @@ import net.minecraft.world.item.equipment.ArmorType;
 import net.oreo.mod.Main;
 import net.oreo.mod.food.ModFoods;
 import net.oreo.mod.modItems.custom.ChiselItem;
+import net.oreo.mod.modItems.custom.CustomCrossbowItem;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -59,7 +60,7 @@ public class ModItems {
             properties -> new Item(properties.horseArmor(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIALS)));
 
     public static final Item GUN = registerItem("gun",
-                properties -> new CrossbowItem(properties.durability(5000000)));
+            properties -> new CustomCrossbowItem(properties.durability(5000000), 35.0f));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Main.MOD_ID, name),
