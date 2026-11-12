@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "sapphire",
+  "key": {
+    "A": "oreogun:sapphire",
+    "S": "minecraft:glass"
+  },
+  "pattern": [
+    " S ",
+    "AAA",
+    "A  "
+  ],
+  "result": {
+    "id": "oreogun:gun"
+  }
+}
